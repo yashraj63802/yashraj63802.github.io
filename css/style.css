@@ -1,0 +1,410 @@
+
+
+/*                                                                 General style                                                            */
+
+
+*
+{
+    list-style-type: none;
+    text-decoration: none !important;
+}
+
+.icon-info
+{
+    border-radius: 50%;
+    border: 8px #0078ff solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Section
+{
+    padding:5rem;
+}
+
+.Section .Section-title p 
+{
+    position:relative;
+
+}
+
+.Section .Section-title p::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 55px;
+    height: 3px;
+    background-color: blue;
+    transform: translateX(-30px);
+}
+
+.helpful-info h2
+{
+    position:relative;
+    padding-bottom:10px;
+    margin-bottom: 30px;
+}
+
+.helpful-info h2::after
+{
+    content: "";
+    position:absolute;
+    background-color: #0078ff;
+    bottom:0;
+    left:0;
+    width:100px;
+    height: 0.7vh;    
+}
+
+
+.card
+{
+    border:none;
+    background-color:#f5f5f5;
+}
+
+
+
+/*                                                                Navbar Section                                                     */
+
+nav
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+}
+.nav-item a
+{
+    position: relative;
+    padding: 0 !important;
+    margin: 1rem;
+}
+.nav-item a::after
+{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #fff;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transition: 0.5s;
+}
+.nav-item a:hover::after
+{
+    width:100%;
+}
+
+
+
+
+
+/*                                                                Header Section                                               */
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-container p::after
+{
+    content: " ";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing
+{
+    0%{content:" D|"}
+    2%{content:" De|"}
+    4%{content:" Dev|"}
+    6%{content:" Deve|"}
+    8%{content:" Devel|"}
+    10%{content:" Develo|"}
+    12%{content:" Develop|"}
+    14%{content:" Deveope|"}
+    19%{content:" Developer|"} /* */
+    21%{content:" Develope|"}
+    23%{content:" Develop|"}
+    25%{content:" Develo|"}
+    27%{content:" Devel|"}
+    29%{content:" Deve|"}
+    31%{content:" Dev|"}
+    33%{content:" De|"}
+    35%{content:" D|"}
+    41%{content:" |"} /* */
+    43%{content:" P|"}
+    45%{content:" Ph|"}
+    47%{content:" Pho|"}
+    49%{content:" Phot|"}
+    51%{content:" Photo|"}
+    53%{content:" Photog|"}
+    55%{content:" Photogr|"}
+    57%{content:" Photogra|"}
+    59%{content:" Photograp|"}
+    61%{content:" Photograph|"}
+    63%{content:" Photogrape|"}
+    69%{content:" Photographer|"} /* */
+    71%{content:" Photographe|"}
+    73%{content:" Photograph|"}
+    75%{content:" Photograp|"}
+    77%{content:" Photogra|"}
+    79%{content:" Photogr|"}
+    81%{content:" Photog|"}
+    83%{content:" Photo|"}
+    85%{content:" Phot|"}
+    87%{content:" Pho|"}
+    89%{content:" Ph|"}
+    91%{content:" P|"}
+    100%{content:" |"} /* */
+
+}
+
+
+
+
+
+
+/*                                                               About Section                                                         */
+
+.about
+{
+    padding:5rem;
+}
+.about .developer-info img
+{
+    width:15rem;
+}
+
+.about .left-side p
+{
+    margin-bottom:0;
+}
+
+.progress
+{
+    border-radius: 0;
+}
+
+/*                                                               Services Section                                                         */
+.icon
+{
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon
+{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+   
+}
+
+.service-icon:hover
+{
+background-color: #0078ff;
+color:#fff;
+border:8px #e9ecef solid;
+}
+
+.service-icon .fa-solid
+{
+    font-size:30px;
+}
+
+/*                                                            Counter section                                                             */
+.Counter
+{
+    background-image: linear-gradient(rgba(0, 157, 255, 0.749),rgba(0, 157, 255, 0.749)), url(../images/post-3.jpg);  
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    padding:7rem;
+}
+.counter-icon
+{
+    width:70px;
+    height:70px;
+    color:#fff;
+    border: 10px white solid;
+}
+
+
+/*                                                             SERVICES section                                                             */
+
+
+/*                                                             Portfolio section                                                             */
+
+
+.img-container
+{
+    overflow: hidden;
+}
+
+.img-container:hover img
+{
+    transform:scale(1.5,1.5);
+}
+.img-container img
+{
+    transition:1s;
+}
+
+/*                                                             Testimonial Section                                                        */
+.Testimonial
+{
+    background-image: linear-gradient(rgba(0, 157, 255, 0.749),rgba(0, 157, 255, 0.749)), url(../images/post-1.jpg);  
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}
+.Testimonial .container
+{
+    padding:10rem;
+}
+.Testimonial img
+{
+    border-radius: 50%;
+}
+.Testimonial span
+{
+    margin-bottom: 5px;
+}
+
+
+/*                                                             BLOG section                                                               */
+
+
+.card-title a:hover
+{
+    color:blue !important;
+    transition: 1s;
+}
+
+.card-img
+{
+    position:relative;
+    margin-bottom: 10px;
+}
+
+.card-img:hover img
+{
+    transform:scale(1.3,1.3);
+}
+.card-img img
+{
+    transition: transform 1s;
+}
+.card-img
+{
+    overflow: hidden;
+
+}
+
+.card-img::before
+{
+    content: "Travel";
+    width: 65px;
+    height: 30px;
+    position: absolute;
+    bottom:5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 1;
+    background-color: blue;
+    text-align: center;
+    color: #fff;
+    z-index:999;
+
+}
+.card-body .card-text
+{
+    font-size: 17px;
+}
+.blog-info 
+{
+    background-color: #ededed;
+}
+.blog-info img
+{
+    width:30px;
+    border-radius: 50%;
+}
+.blog-info span
+{
+    margin-left:5px;
+}
+/*                                                        Contact us Section                                                                    */
+
+/*                                                      Left Side of the contact us section                                                 */
+
+
+.contactus .left-side input
+{
+    margin-bottom: 20px;
+}
+.left-side .submit-btn
+{
+    width:80%;
+    text-align: center;
+}
+.submit-btn .btn
+{
+    border-radius: 30px;
+    padding: 10px;
+    width: 9rem;
+}
+/*                                         Right Side of the contact us section                                             */
+
+.contactus
+{
+    overflow: auto;
+    background-image: linear-gradient(rgba(0, 157, 255, 0.749),rgba(0, 157, 255, 0.749)), url(../images/post-3.jpg);  
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}
+
+
+ul
+{
+    padding:0;
+}
+
+
+ul li i
+{
+    margin-right:5px;
+    color:#0078ff;
+    font-size:18px;
+}
+
+.icons-section i
+{
+    padding: 7px;
+    font-size: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.icons-section i:hover
+{
+background-color: #0078ff;
+color:#fff;
+}
+
+/*                                                      Footer Content                                                               */
+
+
+.Footer p
+{
+    padding: 10px;
+    margin-bottom: 0;
+}
