@@ -40,7 +40,7 @@ Bootstrap Project 1/
 To get started with DevFolio, simply clone this repository to your local machine and open the `index.html` file in a web browser.
 
 ```
-git clone https://github.com/your-username/devfolio.git
+git clone [https://github.com/your-username/devfolio.git](https://github.com/AbdeIkader/First-Bootstrap-Project.git)
 cd devfolio
 ```
 
