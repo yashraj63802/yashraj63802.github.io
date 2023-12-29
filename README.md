@@ -16,7 +16,7 @@ DevFolio is a comprehensive and elegant portfolio template designed for professi
 ## Folder Structure
 
 ```
-Bootstrap Project 1/
+devfolio
 │
 ├── css/
 │   ├── all.min.css
@@ -40,7 +40,7 @@ Bootstrap Project 1/
 To get started with DevFolio, simply clone this repository to your local machine and open the `index.html` file in a web browser.
 
 ```
-git clone [https://github.com/your-username/devfolio.git](https://github.com/AbdeIkader/First-Bootstrap-Project.git)
+git clone https://github.com/AbdeIkader/First-Bootstrap-Project.git
 cd devfolio
 ```
 
